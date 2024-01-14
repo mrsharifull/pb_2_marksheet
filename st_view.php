@@ -1,0 +1,18 @@
+<?php
+require('db_con.php');
+
+if(isset($_GET['id'])){
+    $id = base64_decode($_GET['id']);
+
+    $sql = "SELECT * FROM students WHERE id = $id";
+
+    $result = $conn->query($sql);
+    if($result){
+        $data = $result->fetch_assoc();
+    }
+}
+
+include('view/st_view.view.php');
+
+
+?>
