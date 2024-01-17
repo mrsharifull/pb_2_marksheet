@@ -47,7 +47,7 @@
                                     <td><?= $mark['chemistry'] ?></td> 
                                     <td>
                                       <div class="btn-group" role="group" >
-                                          <a href="st_view.php?id=<?=base64_encode($mark['id'])?>" class="btn btn-sm btn-primary">View</a>
+                                          <a href="marksheet.php?id=<?=base64_encode($mark['id'])?>" class="btn btn-sm btn-primary">View</a>
 
                                           <a href="st_edit.php?id=<?=base64_encode($mark['id'])?>" class="btn btn-sm btn-warning">Edit</a>
 
